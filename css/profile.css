@@ -20,6 +20,7 @@
   padding-bottom: 10px;
 }
 /* end global */
+/* start nav menu */
 nav {
   display: flex;
   justify-content: space-between;
@@ -57,7 +58,7 @@ nav {
 img {
   object-fit: cover;
 }
-
+/* end nav menu */
 .text-img {
   background-image: url("https://alveentino.github.io/Alvintino-MiniCoding/assets/empty-classroom-due-coronavirus-pandemic.jpg");
   background-size: cover;
