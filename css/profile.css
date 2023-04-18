@@ -59,7 +59,7 @@ img {
 }
 
 .text-img {
-  background-image: url("/assets/empty-classroom-due-coronavirus-pandemic.jpg");
+  background-image: url("assets/empty-classroom-due-coronavirus-pandemic.jpg");
   background-size: cover;
   font-size: xx-large;
   font-variant: small-caps;
