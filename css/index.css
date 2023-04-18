@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding-right: 60px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+}
+
+.box-image {
+  display: flex;
+  justify-content: center;
+  padding-left: 100px;
+  flex-wrap: wrap;
+}
+
+.box-image > figure {
+  margin-right: 90px;
+  margin-top: 30px;
+}
+
+.box-message-us {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.button-nav {
+  border: 1px solid black;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  padding-top: 7px;
+  transition: ease-in-out 0.5s;
+}
+
+.button-nav:hover {
+  background-color: black;
+  color: yellow;
+}
+
+/* line */
+div#line {
+  border: 1px solid black;
+  width: 99%;
+  margin-left: 5px;
+}
+
+div#box-text {
+  margin: 30px 100px;
+}
+
+.label {
+  text-align: left;
+  padding-top: 1px;
+  display: block;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+form > * {
+  width: 100%;
+  margin-left: 100px;
+}
+
+.box-answer {
+  margin-left: 100px;
+  border: 1px black solid;
+  width: 400px;
+  height: 100%;
+}
+
+section#message-us-section {
+  margin-bottom: 30px;
+}
+
+b {
+  margin: 0em 0.5em;
+}
+
+input {
+  margin: 0em 0.5em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column > * {
+  margin-bottom: 30px;
+}
+
+h2#nama {
+  margin-bottom: 10px;
+}
+
+div#img {
+  margin-top: 10px;
+  width: 100%;
+  height: 350px;
+}
+
+button {
+  width: 80%;
+}
+
+img {
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+  div#box-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    padding-right: 10px;
+  }
+
+  .box-message-us {
+    justify-content: center;
+  }
+
+  form > * {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  div#line {
+    width: 98%;
+  }
+  div.box {
+    margin-bottom: 50px;
+  }
+  .box-answer {
+    margin-left: 0px;
+    margin-top: 30px;
+    border: 1px black solid;
+    width: 300px;
+    height: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}

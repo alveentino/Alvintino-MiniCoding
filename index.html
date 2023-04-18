@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/index.css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/revou-icon.png"
+      type="image/x-icon"
+    />
+    <title>RevoU || Home</title>
+  </head>
+
+  <body onload="welcome()">
+    <!-- start header -->
+    <header>
+      <nav>
+        <a href="index.html">
+          <img
+            src="/assets/revou-icon.png"
+            alt=""
+            style="border-radius: 30dp"
+            width="35dp"
+          />
+        </a>
+        <div class="menu">
+          <a class="button-nav" href="index.html">Home</a>
+          <a class="button-nav" href="profile.html">Our Profile</a>
+          <a class="button-nav" href="#">Achievement</a>
+          <a class="button-nav" href="#message-us-section">Message Us</a>
+        </div>
+      </nav>
+      <div id="line"></div>
+    </header>
+    <!-- end header -->
+
+    <!-- start main -->
+    <main>
+      <!-- start hero section -->
+      <section id="hero-section">
+        <div id="box-text">
+          <h1 id="nama">Hi, Welcome To Website</h1>
+          <p>Ini adalah website latihan pertama</p>
+        </div>
+        <div id="img">
+          <img
+            src="/assets/empty-classroom-due-coronavirus-pandemic.jpg"
+            alt=""
+            width="100%"
+            height="100%"
+          />
+        </div>
+      </section>
+      <!-- end hero section -->
+
+      <!-- start line -->
+      <div id="line"></div>
+      <!-- end line -->
+
+      <!-- start our facilitation section -->
+      <section id="our-facilitation-section">
+        <div id="box-text">
+          <h2>Our Facilitation</h2>
+        </div>
+        <div style="padding-bottom: 100px">
+          <div class="box-image">
+            <figure>
+              <div style="width: 170px; overflow: hidden">
+                <img
+                  style="
+                    border-radius: 50%;
+                    object-fit: cover;
+                    width: 170px;
+                    height: 170px;
+                  "
+                  src="/assets/117770-OPDO7Z-60.jpg"
+                  alt=""
+                />
+              </div>
+              <figcaption style="text-align: center; font-size: x-large">
+                Free Wifi
+              </figcaption>
+            </figure>
+            <figure>
+              <div style="width: 170px; overflow: hidden">
+                <img
+                  style="
+                    border-radius: 50%;
+                    object-fit: cover;
+                    width: 170px;
+                    height: 170px;
+                  "
+                  src="/assets/empty-classroom-due-coronavirus-pandemic.jpg"
+                  width="90"
+                />
+              </div>
+              <figcaption style="text-align: center; font-size: x-large">
+                Classroom
+              </figcaption>
+            </figure>
+            <figure>
+              <div style="width: 170px; overflow: hidden">
+                <img
+                  style="
+                    border-radius: 50%;
+                    object-fit: cover;
+                    width: 170px;
+                    height: 170px;
+                  "
+                  class="rounded"
+                  src="/assets/revou-icon.png"
+                  width="90"
+                />
+              </div>
+              <figcaption style="text-align: center; font-size: x-large">
+                Book Manual
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <!-- end our facilitation section -->
+
+      <!-- start line -->
+      <div id="line"></div>
+      <!-- end line -->
+
+      <!-- start message us section -->
+      <section id="message-us-section">
+        <div id="box-text">
+          <h2>Message Us</h2>
+        </div>
+        <div class="box-message-us">
+          <!-- start form -->
+          <form onsubmit="event.preventDefault,validasi()">
+            <div class="row">
+              <div class="column">
+                <label class="label" for="_nama">Nama</label>
+                <label class="label" for="tgl">Tanggal Lahir</label>
+                <label class="label" for="laki-laki">Jenis Kelamin</label>
+                <label class="label" for="pesan">Pesan</label>
+              </div>
+              <div class="column">
+                <b>:</b>
+                <b>:</b>
+                <b>:</b>
+                <b>:</b>
+              </div>
+              <div class="column">
+                <input id="_nama" type="text" placeholder="Nama" required />
+                <input id="tgl" type="date" required />
+                <div class="row">
+                  <input
+                    type="radio"
+                    name="radio2"
+                    id="laki-laki"
+                    value="Laki-Laki"
+                    required
+                  />
+                  <label for="laki-laki">Laki-Laki</label>
+                  <input
+                    type="radio"
+                    name="radio2"
+                    id="perempuan"
+                    value="Perempuan"
+                    required
+                  />
+                  <label for="perempuan">Perempuan</label>
+                </div>
+                <textarea rows="4" cols="30" id="pesan" required></textarea>
+              </div>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+          <!-- end form -->
+          <div class="box">
+            <div class="box-answer">
+              <p style="margin-top: 20px; margin-bottom: 20px">
+                <b id="times">Current time : </b>
+              </p>
+              <p id="hasilNama"><b>Nama : </b></p>
+              <p id="hasilTgl"><b>Tanggal Lahir : </b></p>
+              <p id="hasilJenis"><b>Jenis Kelamin : </b></p>
+              <p id="hasilPesan"><b>Pesan : </b></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end message us section -->
+
+      <!-- start line -->
+      <div id="line"></div>
+      <!-- end line -->
+    </main>
+    <!-- end main -->
+
+    <!-- start footer -->
+    <footer>
+      <h5 style="text-align: end; margin: 10px">
+        Created By M. Ersan Aldo Alvinetino
+      </h5>
+    </footer>
+    <!-- end footer -->
+
+    <!-- script -->
+    <script src="/js/index.js"></script>
+  </body>
+</html>

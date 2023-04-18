@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* global */
+.mt {
+  margin-top: 10px;
+}
+
+.mb {
+  margin-bottom: 10px;
+}
+
+.pt {
+  padding-top: 10px;
+}
+
+.pb {
+  padding-bottom: 10px;
+}
+/* end global */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding-right: 60px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+}
+
+.button-nav {
+  border: 1px solid black;
+  padding: 5px;
+  text-decoration: none;
+  color: black;
+  padding-top: 7px;
+  transition: ease-in-out 0.5s;
+}
+
+.button-nav:hover {
+  background-color: black;
+  color: yellow;
+}
+
+img {
+  object-fit: cover;
+}
+
+.text-img {
+  background-image: url("/assets/empty-classroom-due-coronavirus-pandemic.jpg");
+  background-size: cover;
+  font-size: xx-large;
+  font-variant: small-caps;
+  font-style: oblique;
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  padding-top: 10%;
+  color: black;
+}
+
+/* line */
+div#line {
+  border-top: 1px solid black;
+  width: 99%;
+  margin-left: 5px;
+}
+
+/* start about section */
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.column {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-text {
+  font-size: xx-large;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+.about-content {
+  font-size: medium;
+  line-height: 1.7;
+}
+
+.line-gap {
+  border-left: 1px solid grey;
+  padding-left: 30px;
+}
+/* end about section */
+
+/* start program section */
+
+section#program {
+  background-color: lightgray;
+  border-radius: 20px;
+  padding-top: 30px;
+}
+
+.title-program {
+  color: black;
+  margin-bottom: 10px;
+  font-size: xx-large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+
+.column-program {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.program-box {
+  color: black;
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+  word-wrap: normal;
+  line-height: 1.5;
+}
+.join-button {
+  width: 100%;
+  border-radius: 10px;
+  background-color: yellow;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: ease-in-out 0.3s;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.join-button:hover {
+  background-color: black;
+  color: yellow;
+}
+
+/* end program section */
+
+@media only screen and (max-width: 1000px) {
+  nav {
+    padding-right: 10px;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .line-gap {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  div#line {
+    width: 98%;
+  }
+}
